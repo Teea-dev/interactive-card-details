@@ -1,38 +1,257 @@
-.App {
-  text-align: center;
+
+
+
+* {
+  margin: 0%;
+  padding: 0%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+h2,h3,label,::placeholder{
+  font-family: 'Space Grotesk', sans-serif;
+ 
+  font-size: 18px;
+  font-weight: 500;
+}
+::placeholder{
+ 
+  font-size: 14px;
+  font-weight: 500;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.col-3{
+  width:auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* form */
+
+.login-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 150px;
+  /* float: right; */
+}
+.details-section {
+  justify-content: center;
+}
+
+.login-section h2 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+form .input-field {
+  border: #c9c9c9 1px solid;
+  border-radius: 10px;
+  padding: 10px 15px 10px 15px;
+  width: 380px;
+  font-size: 14px;
+  color: hsl(279, 6%, 55%);
+}
+form .input-field :active{
+  border: linear-gradient( to right,hsl(249, 99%, 64%), hsl(278, 94%, 30%)) 1px solid;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  padding-block: 0.6rem;
+}
+
+.input label {
+  color: hsl(279, 6%, 55%) ;
+  text-transform:uppercase;
+}
+
+.login-items {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.login-tag h1 {
+  font-size: 14px;
+  font-weight: 700;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button {
+  margin-top: 1rem;
+  padding-block: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  width: 380px;
+  background-color: hsl(278, 68%, 11%);
+  color:hsl(0, 0%, 100%) ;
+}
+
+.button:hover {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(279, 6%, 55%);
+}
+.button h3{
+  font-size: 18px;
+}
+/* desktop */
+.top .desktop {
+  height: 100vh;
+}
+/* cards*/
+.card-container {
+  position: relative;
+  margin-bottom: 0;
+
+}
+.cardfront {
+  position: relative;
+  top: 100px;
+  right: 150px;
+}
+.cardback {
+  position: relative;
+  top: 50px;
+  right: 50px;
+}
+.card-num {
+  position: relative;
+  top: 40px;
+  right: 90px;
+  color: hsl(0, 0%, 100%);
+}
+.card-name {
+  position: relative;
+  top: 50px;
+  right: 130px;
+  color: hsl(0, 0%, 100%);
+}
+.card-name h2 {
+  font-size: 14px;
+  font-weight: 500;
+}
+.exp-date{
+   position: relative;
+  top: 25px;
+  right: -60px;
+  color: hsl(0, 0%, 100%);
+}
+.exp-date h3{
+  font-size: 14px;
+  font-weight: 500;
+}
+.cvc{
+     position: relative;
+  top: -40px;
+  right: -180px;
+  color: hsl(0, 0%, 100%);
+}
+.cvc h3{
+  font-size: 14px;
+  font-weight: 500;
+}
+.cvc-input {
+  margin-left: 30px;
+}
+
+.error-messages{
+  font-size: 12px;
+  color:hsl(0, 100%, 66%);
+}
+html,body{
+  width: 100%;
+  overflow-x: hidden;
+ 
+}
+
+@media (max-width:750px){
+
+html,body{
+  width: 100%;
+  overflow-x: hidden;
+ 
+}
+
+.details-section{
+  display:grid;
+  align-items: start;
+ 
+  padding-bottom: 5rem;
+}
+.top .mobile{
+  margin:0 auto;
+}
+.cardfront{
+  width:200px;
+}
+.cardback{
+  width:200px;
+} 
+
+.card-container {
+  position: relative;
+}
+.cardfront {
+  position: relative;
+  top: -80px;
+  right: -10px;
+ 
+}
+.cardback {
+  position: relative;
+  top: -350px;
+  right: -50px;
+  
+}
+.card-num {
+ 
+  top: -150px;
+  right: -30px;
+  color:hsl(0, 0%, 100%);
+
+}
+.col-3{
+  width:auto;
+}
+.card-num h2{
+  font-size: 14px;
+}
+.card-name {
+ 
+   top: -125px;
+  right: -30px;
+  color: hsl(0, 0%, 100%);
+}
+.card-name h2 {
+  font-size: 14px;
+  font-weight: 500;
+}
+.exp-date{
+    top: -150px;
+  right: -160px;
+  color: hsl(0, 0%, 100%);
+}
+.exp-date h3{
+   top: -150px;
+  right: -160px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.cvc{
+     position: relative;
+  top: -415px;
+  right: -190px;
+  color: hsl(0, 0%, 100%);
+}
+form .input-field {
+  border: #c9c9c9 1px solid;
+  border-radius: 10px;
+  padding: 10px 15px 10px 15px;
+  width: 200px;
+  font-size: 14px;
+  color: hsl(279, 6%, 55%);
+}
 }
