@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "./images/card-logo.svg";
+
 import mobilebackground from "./images/bg-main-mobile.png";
 import cardfront from "./images/bg-card-front.png";
 import cardback from "./images/bg-card-back.png";
