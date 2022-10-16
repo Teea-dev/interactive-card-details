@@ -43,7 +43,6 @@ const Form = (props) => {
             type="text"
             name="name"
             id="email"
-            // value={forValues.email}
             placeholder="e.g Jane Appleseed"
             onChange={handleChange}
           />
@@ -55,7 +54,6 @@ const Form = (props) => {
             {...register("number", {
               required: true,
               maxLength: 16,
-
               pattern: {
                 value: /^[0-9]+$/,
                 message: "Wrong format. numbers only",
